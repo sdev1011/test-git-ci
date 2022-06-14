@@ -17,8 +17,8 @@ jobs:
 
     - name: Check ENV secret configs
       run: |
-        echo "The AWS_GITHUB_CI_ACCESS_KEY_ID is:${{secrets.AWS_GITHUB_CI_ACCESS_KEY_ID}}"
-        echo "The AWS_GITHUB_CI_SECRET_ACCESS_KEY is:${{secrets.AWS_GITHUB_CI_SECRET_ACCESS_KEY}}"
+        echo "The AWS_GITHUB_CI_ACCESS_KEY_ID is:${{env.AWS_GITHUB_CI_ACCESS_KEY_ID}}"
+        echo "The AWS_GITHUB_CI_SECRET_ACCESS_KEY is:$AWS_GITHUB_CI_SECRET_ACCESS_KEY"
         echo "The AWS_REGION is:${{secrets.AWS_REGION}}"
 
     - name: Configure AWS credentials
